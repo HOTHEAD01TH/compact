@@ -1,0 +1,11 @@
+{
+  "trace_id": "demo-trace",
+  "spans": [
+    {"id": "s1", "kind": "thought", "name": "plan", "text": "Look at the filter function and name the column it checks."},
+    {"id": "s2", "kind": "tool", "name": "read_file", "text": "Read src/filter.ts lines 1-40."},
+    {"id": "s3", "kind": "tool", "name": "grep", "text": "Search the repo for the string TODO."},
+    {"id": "s4", "kind": "thought", "name": "repeat", "text": "Restate the same plan a third time with no new fact."},
+    {"id": "s5", "kind": "tool", "name": "shell", "text": "Run the unit tests for the filter."},
+    {"id": "s6", "kind": "thought", "name": "unsure", "text": "Unsure whether the failure is the assertion or the fixture."}
+  ]
+}
